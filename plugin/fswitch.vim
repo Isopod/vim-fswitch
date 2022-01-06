@@ -303,7 +303,7 @@ function! FSwitch(filename, precmd)
         while bufnum != -1
             let filename = fnamemodify(bufname(bufnum), ':p')
             if filename == newpath
-                execute ":sbuffer " .  filename
+                execute ":buffer " .  filename
                 return
             endif
             let i += 1
